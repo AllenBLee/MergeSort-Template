@@ -61,31 +61,19 @@ bool sorted(int a[], int n) {
 int main(int argc, char * args[]) {
     int a[1000];
     for (int i = 0; i < 1000; ++i) a[i] = -50 + rand() % 100;
-    
-    //Needs three parameters
-    //The vector, front, and back
     mergesort(a, 0, 999);
     assert(sorted(a, 1000));
     
     int b[1001];
     for (int i = 0; i < 1001; ++i) b[i] = -50 + rand() % 100;
-    
-    //Needs three parameters
-    //The vector, front, and back
     mergesort(b, 0, 1000);
     assert(sorted(b, 1001));
     
     int c[] = { 2 };
-    
-    //Needs three parameters
-    //The vector, front, and back
     mergesort(c, 0, 0);
     assert(sorted(c, 1));
     
     int d[] = { 1, 2, 3, 4, 5 };
-    
-    //Needs three parameters
-    //The vector, front, and back
     mergesort(d, 0, 4);
     assert(sorted(d, 5));
     
